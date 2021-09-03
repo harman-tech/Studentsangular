@@ -1,0 +1,53 @@
+<div class="container mt-5 bg-secondary text-white p-5">
+    <h1>Edit Student Form</h1>
+    <form #studentForm="ngForm">
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input
+            type="text"
+            class="form-control"
+            name="id"
+            id="id"
+            [(ngModel)]="student.id"
+            required
+          />
+         
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            [(ngModel)]="student.name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            id="email"
+            [(ngModel)]="student.email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="number"
+            class="form-control"
+            name="phone"
+            id="phone"
+            [(ngModel)]="student.phone"
+            required
+          />
+        </div>
+        
+        <button type="submit" class="btn btn-primary mt-3" >Save</button>
+      </form>
+    </div>
+
